@@ -1,0 +1,338 @@
+@media (max-width: 1400px) {
+    .bg {
+        height: 550px !important;
+        background-size: contain !important;
+    }
+
+    .banner-thumb img {
+        height: 400px !important;
+        width: 550px !important;
+        top: 46px;
+        left: 25px !important;
+    }
+
+    .h1-text {
+        font-size: 50px !important;
+    }
+
+    .main-menu-content ul li a {
+        padding: 18px 8px !important;
+    }
+
+    .testi-thumb-img {
+        max-width: 530px !important;
+        margin-left: 0 !important;
+    }
+
+    .ratings {
+        right: -60px !important;
+    }
+
+    .ratings p {
+        font-size: 18px !important;
+    }
+
+    .ratings h6 {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    .svg {
+        right: 0 !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .bg {
+        height: 600px !important;
+        background-size: cover !important;
+    }
+
+    .banner-thumb img {
+        height: 300px !important;
+        width: 550px !important;
+        top: 100px;
+        left: 25px !important;
+    }
+
+    .play-btn {
+        height: 70px !important;
+        width: 70px !important;
+    }
+
+    .button {
+        top: 53% !important;
+        transform: translateX(-15px) !important;
+    }
+
+    .h1-text {
+        line-height: 55px !important;
+    }
+
+    .header-right-box {
+        gap: 10px !important;
+    }
+
+    .bg-second-text {
+        padding: 0 20px 30px !important;
+    }
+
+    .svg {
+        height: 130px !important;
+        width: 130px !important;
+        right: 0 !important;
+    }
+
+    .discover {
+        flex-direction: column;
+    }
+
+    .testi-thumb-img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .testi-h4 {
+        font-size: 18px !important;
+    }
+
+    .ratings {
+        right: -90px !important;
+        bottom: -10px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .bg {
+        height: 1100px !important;
+        background-image: none !important;
+        background-color: #0B4B4B;
+        margin: 0 8px !important;
+    }
+
+    nav {
+        background-color: #0C6E6D !important;
+    }
+
+    .nav {
+        padding: 16px 0;
+    }
+
+    .hero-img {
+        position: absolute;
+        left: 80% !important;
+    }
+
+    .content-left {
+        margin-top: 0 !important;
+    }
+
+    .h1-text {
+       font-size: 46px !important;
+    }
+
+    .banner-thumb {
+        margin-top: 50px;
+    }
+
+    .banner-thumb img {
+        height: 420px !important;
+        width: 620px !important;
+        top: 0;
+        left: 0 !important;
+    }
+
+    .play-btn {
+        height: 90px !important;
+        width: 90px !important;
+    }
+
+    .button {
+        top: 62% !important;
+        transform: translateX(25px) !important;
+    }
+
+    .bg-2 {
+        transform: translateY(0) !important;
+    }
+
+    .bg-second {
+        margin-bottom: 30px;
+    }
+
+    .about-thumb-img {
+        width: 100% !important;
+        margin-bottom: 70px;
+    }
+
+    .svg {
+        width: 140px !important;
+        height: 140px !important;
+    }
+
+    .discover {
+        flex-direction: row;
+    }
+
+    .work {
+        margin-bottom: 30px;
+    }
+
+    .arrow {
+        margin-bottom: 30px;
+    }
+
+    .plan-translate {
+        transform: translateY(-20px) !important;
+    }
+
+    .team-member {
+        margin-top: 40px;
+    }
+
+    .testi-thumb-img {
+        max-width: 100% !important;
+    }
+
+    .ratings h6 {
+        width: 42px !important;
+        height: 42px !important;
+    }
+
+    .ratings p {
+        font-size: 22px !important;
+    }
+
+    .ratings {
+        right: -70px !important;
+    }
+
+    .testi-h4 {
+        font-size: 24px !important;
+    }
+
+    .comment {
+        margin-top: 40px;
+    }
+
+    .footer-last-text {
+        margin-bottom: 25px !important;
+    }
+
+    .content-slider-content h1 {
+        font-size: 100px !important;
+    }
+
+    .content-slider-content2 h1 {
+        font-size: 100px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .bg {
+        height: 700px !important;
+    }
+
+    .hero-img {
+        left: 48% !important;
+        top: 14% !important;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .discover {
+        flex-direction: column;
+    }
+
+    .font-60 {
+        font-size: 36px !important;
+    }
+
+    .star-section {
+        margin-bottom: 20px;
+    }
+
+    .plan {
+        margin-top: 50px;
+    }
+
+    .team-grp-img {
+        width: 100% !important;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    .blog-image-img {
+        width: 100% !important;
+    }
+
+    .star-content-text {
+        margin-left: 0 !important;
+    }
+
+    .service-thumb-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .bg {
+        height: 600px !important;
+    }
+
+    .h1-text {
+        font-size: 30px !important;
+        line-height: 35px !important;
+    }
+
+    .font-18 {
+        font-size: 16px !important;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .ratings {
+        display: none !important;
+    }
+
+    .testi-h4 {
+        font-size: 18px !important;
+    }
+
+    .content-slider-content h1 {
+        font-size: 60px !important;
+    }
+
+    .content-slider-content2 h1 {
+        font-size: 60px !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .svg {
+        display: none !important;
+    }
+
+    .about-shape-img {
+        display: none !important;
+    }
+
+    .latest-work-content {
+        padding: 10px !important;
+    }
+
+    .work-pic-img {
+        max-width: 100% !important;
+    }
+
+    .swiper-content-text {
+        font-size: 14px !important;
+        height: 30px !important;
+    }
+}
