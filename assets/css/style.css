@@ -261,7 +261,7 @@ a {
 }
 
 .bg {
-    background-image: url(/images/banner.png);
+    background-image: url(../images/banner.png/);
     height: 830px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -385,7 +385,7 @@ a {
 
 .feature-box .group {
     padding: 16px 24px 64px;
-    background-image: url(/images/feature_shape.png);
+    background-image: url(../images/feature_shape.png);
     background-repeat: round;
     background-size: cover;
     position: relative;
@@ -439,7 +439,7 @@ a {
 }
 
 .bg-2 {
-    background-image: url(/images/service-bg.png);
+    background-image: url(../images/service-bg.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -489,7 +489,7 @@ a {
 .bg-second-text::before {
     content: "";
     position: absolute;
-    background-image: url(/images/service-content-bg.png);
+    background-image: url(../images/service-content-bg.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -520,7 +520,7 @@ a {
 }
 
 .bg-3 {
-    background-image: url(/images/feature_bg.png);
+    background-image: url(../images/feature_bg.png);
     background-position: bottom;
     position: relative;
     background-repeat: no-repeat;
@@ -663,7 +663,7 @@ a {
 .work {
     padding: 40px 38px 28px;
     position: relative;
-    background-image: url(/images/steps_bg.png);
+    background-image: url(../images/steps_bg.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -778,7 +778,7 @@ a {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/images/price-bg1.png);
+    background-image: url(../images/price-bg1.png);
     position: relative;
     border-radius: 6px;
 }
@@ -790,7 +790,7 @@ a {
 .plan::before {
     content: "";
     position: absolute;
-    background-image: url(/images/pricing-hover.png);
+    background-image: url(../images/pricing-hover.png);
     transition-duration: .5s;
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
