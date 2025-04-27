@@ -40,6 +40,14 @@
     .svg {
         right: 0 !important;
     }
+
+    .header-creative .header-btn {
+        margin-top: 15px !important;
+    }
+
+    .header-creative .light-btn {
+        margin-top: 15px !important;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -128,7 +136,7 @@
     }
 
     .h1-text {
-       font-size: 46px !important;
+        font-size: 46px !important;
     }
 
     .banner-thumb {
@@ -226,6 +234,11 @@
     .content-slider-content2 h1 {
         font-size: 100px !important;
     }
+
+    .load-text {
+        font-size: 18px !important;
+        /* letter-spacing: 25px !important; */
+    }
 }
 
 @media (max-width: 768px) {
@@ -276,6 +289,11 @@
 
     .service-thumb-img {
         width: 100%;
+    }
+
+    .load-text {
+        /* font-size: 18px !important; */
+        letter-spacing: 15px !important;
     }
 }
 
@@ -334,5 +352,15 @@
     .swiper-content-text {
         font-size: 14px !important;
         height: 30px !important;
+    }
+
+    .load-text {
+        font-size: 16px !important;
+        letter-spacing: 10px !important;
+    }
+
+    .latest-work-margin {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
     }
 }

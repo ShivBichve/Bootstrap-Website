@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --tw-ring-offset-shadow: 0 0 #0000;
     --tw-border-spacing-x: 0;
@@ -164,6 +168,53 @@ nav {
     width: 100%;
 }
 
+.header-creative {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    animation: .5s ease-in-out 0s normal none 1 running headerSlideDown;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+    /* --tw-shadow: 0px 0px 20px rgba(187, 187, 187, .2);
+    --tw-shadow-colored: 0px 0px 20px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    --tw-backdrop-blur: blur(12px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia); */
+}
+
+.hamburger-menu {
+    cursor: pointer;
+}
+
+.header-creative .hamburger-menu {
+    color: black !important;
+}
+
+.header-creative .header-logo img {
+    filter: brightness(0);
+}
+
+.header-creative .main-menu-content ul li a {
+    padding: 30px 28px;
+}
+
+.header-creative .header-btn-a {
+    color: #0c6e6d !important;
+    font-weight: 550 !important;
+}
+
+.header-creative .header-btn-a i {
+    color: #0c6e6d !important;
+    font-weight: 550 !important;
+}
+
+.header-creative .light-btn a {
+    background-color: #0c6e6d !important;
+}
+
 a {
     text-decoration: none;
 }
@@ -187,7 +238,7 @@ a {
     color: #0C6E6D;
 }
 
-.submenu li:hover {
+.submenu li a:hover {
     color: #0C6E6D !important;
 }
 
@@ -222,12 +273,12 @@ a {
     color: white !important;
 }
 
-.header-btn a:before {
+.header-btn-a:before {
     position: absolute;
     content: "";
-    bottom: -3px;
+    bottom: -5px;
     left: 0;
-    width: 26px;
+    width: var(--headerbtna, 26px);
     height: 2px;
     background: #557570;
     transition: all .5s;
@@ -261,12 +312,11 @@ a {
 }
 
 .bg {
-    background-image: url(../images/banner.png/);
+    background-image: url(/images/banner.png);
     height: 830px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
     border-radius: 40px;
     overflow: hidden;
     display: flex;
@@ -385,7 +435,7 @@ a {
 
 .feature-box .group {
     padding: 16px 24px 64px;
-    background-image: url(../images/feature_shape.png);
+    background-image: url(/images/feature_shape.png);
     background-repeat: round;
     background-size: cover;
     position: relative;
@@ -439,7 +489,7 @@ a {
 }
 
 .bg-2 {
-    background-image: url(../images/service-bg.png);
+    background-image: url(/images/service-bg.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -484,12 +534,14 @@ a {
 .bg-second-text {
     padding: 0 40px 36px;
     background-color: rgba(11, 75, 75, 1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .bg-second-text::before {
     content: "";
     position: absolute;
-    background-image: url(../images/service-content-bg.png);
+    background-image: url(/images/service-content-bg.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
@@ -520,7 +572,7 @@ a {
 }
 
 .bg-3 {
-    background-image: url(../images/feature_bg.png);
+    background-image: url(/images/feature_bg.png);
     background-position: bottom;
     position: relative;
     background-repeat: no-repeat;
@@ -663,7 +715,7 @@ a {
 .work {
     padding: 40px 38px 28px;
     position: relative;
-    background-image: url(../images/steps_bg.png);
+    background-image: url(/images/steps_bg.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -778,7 +830,7 @@ a {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../images/price-bg1.png);
+    background-image: url(/images/price-bg1.png);
     position: relative;
     border-radius: 6px;
 }
@@ -790,7 +842,7 @@ a {
 .plan::before {
     content: "";
     position: absolute;
-    background-image: url(../images/pricing-hover.png);
+    background-image: url(/images/pricing-hover.png);
     transition-duration: .5s;
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
@@ -917,9 +969,9 @@ a {
     height: var(--latestworkimgheight, 0px);
     top: var(--latestworkimgtop, 0);
     bottom: var(--latestworkimgbottom, none);
+    opacity: var(--latestworkimgopacity, 1);
     left: 0;
     z-index: 10;
-    opacity: 0.4;
 }
 
 .team-grp-2 {
@@ -1009,8 +1061,18 @@ a {
 }
 
 .map-icon {
-    width: 30px;
-    height: 30px;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+    background-color: rgba(12, 110, 109, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-icon2 {
+    width: 40px !important;
+    height: 30px !important;
     border-radius: 50%;
     background-color: rgba(12, 110, 109, 1);
     display: flex;
@@ -1158,6 +1220,24 @@ a {
     z-index: 10;
     position: relative;
     cursor: pointer;
+}
+
+.team-grp-social-handle::before {
+    content: "";
+    position: absolute;
+    transition-duration: .5s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    border-radius: 50%;
+    background-color: rgba(12, 110, 109, 1);
+    --tw-scale-x: var(--teamgrpsocialhandleX, 0);
+    --tw-scale-y: var(--teamgrpsocialhandleY, 0);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    top: 0;
+    left: 0;
 }
 
 .blog-image::before {
@@ -1378,6 +1458,37 @@ a {
     font-size: 14px !important;
 }
 
+.toTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #078F8B;
+    border-radius: 50%;
+}
+
+.toTopBtn i {
+    font-size: 22px;
+    color: #078F8B;
+}
+
+.swiper-pagination-bullet {
+    height: 12px !important;
+    width: 12px !important;
+    background-color: #063232 !important;
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
 
 
 
@@ -1438,5 +1549,15 @@ a {
 
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes headerSlideDown {
+    0% {
+        margin: -150px 0 0;
+    }
+
+    100% {
+        margin: 0;
     }
 }

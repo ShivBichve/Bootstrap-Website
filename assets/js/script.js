@@ -1,3 +1,4 @@
+let nav = document.querySelector("nav");
 let primary_btn = document.querySelectorAll(".primary-btn");
 let group = document.querySelectorAll(".group");
 let hidden_text = document.querySelectorAll(".hidden-text");
@@ -16,6 +17,7 @@ let latest_work_img = document.querySelectorAll(".latest-work-img");
 let work_pic_img = document.querySelectorAll(".work-pic-img");
 let latest_work_content = document.querySelectorAll(".latest-work-content");
 let latest_work_btn_a = document.querySelectorAll(".latest-work-btn-a");
+let team_grp_social_handle = document.querySelectorAll(".team-grp-social-handle");
 let team_grp_social = document.querySelectorAll(".team-grp-social");
 let team_member = document.querySelectorAll(".team-member");
 let blogimage = document.querySelectorAll(".blog-image");
@@ -27,6 +29,26 @@ let read_more_text1 = document.querySelectorAll(".read-more-text1");
 let social_icon_a = document.querySelectorAll(".social-icon-a");
 let preloader = document.querySelector("#preloader");
 let load_text = document.querySelector(".load-text");
+let header_btn_a = document.querySelector(".header-btn-a");
+
+window.addEventListener("scroll", fixNav);
+
+function fixNav() {
+    if(window.scrollY > nav.offsetHeight + 200) {
+        nav.classList.add("header-creative");
+    }
+    else {
+        nav.classList.remove("header-creative");
+    }
+}
+
+header_btn_a.addEventListener("mouseover", () => {
+    header_btn_a.style.setProperty('--headerbtna', '100%');
+});
+
+header_btn_a.addEventListener("mouseout", () => {
+    header_btn_a.style.setProperty('--headerbtna', '26px');
+});
 
 window.addEventListener("load", () => {
     setTimeout(() => {
@@ -80,6 +102,18 @@ for(let i=0; i<blog_content.length; i++) {
     });
 }
 
+for(let i=0; i<team_grp_social_handle.length; i++) {
+    team_grp_social_handle[i].addEventListener("mouseover", () => {
+        team_grp_social_handle[i].style.setProperty('--teamgrpsocialhandleX', 'none');
+        team_grp_social_handle[i].style.setProperty('--teamgrpsocialhandleY', 'none');
+    });
+
+    team_grp_social_handle[i].addEventListener("mouseout", () => {
+        team_grp_social_handle[i].style.setProperty('--teamgrpsocialhandleX', '0');
+        team_grp_social_handle[i].style.setProperty('--teamgrpsocialhandleY', '0');
+    });
+}
+
 for(let i=0; i<team_member.length; i++) {
     team_member[i].addEventListener("mouseover", () => {
         team_grp_social[i].style.top = "6%";
@@ -97,6 +131,7 @@ for(let i=0; i<latest_work_box.length; i++) {
         latest_work_btn_a[i].style.left = "50%";
         latest_work_btn_a[i].style.opacity = "1";
         latest_work_img[i].style.setProperty('--latestworkimgheight', '100%');
+        latest_work_img[i].style.setProperty('--latestworkimgopacity', '0');
         work_pic_img[i].style.filter = "grayscale(1)";
     });
     
@@ -106,6 +141,7 @@ for(let i=0; i<latest_work_box.length; i++) {
         latest_work_btn_a[i].style.left = "0";
         latest_work_btn_a[i].style.opacity = "0";
         latest_work_img[i].style.setProperty('--latestworkimgheight', '0px');
+        latest_work_img[i].style.setProperty('--latestworkimgopacity', '1');
         work_pic_img[i].style.filter = "grayscale(0)";
     });
 }
