@@ -120,7 +120,7 @@ for(let i=0; i<team_member.length; i++) {
     });
     
     team_member[i].addEventListener("mouseout", () => {
-        team_grp_social[i].style.top = "-50%";
+        team_grp_social[i].style.top = "-56%";
     });
 }
 
@@ -146,23 +146,12 @@ for(let i=0; i<latest_work_box.length; i++) {
     });
 }
 
-for(let i=0; i<plan.length; i++) {
-    plan[i].addEventListener("mouseover", () => {
-        plan_content[i].style.setProperty('--plancontentX', 'none');
-        plan_content[i].style.setProperty('--plancontentY', 'none');
-        plan[i].style.setProperty('--planheight', '100%');
-        purchase_btn[i].style.setProperty('--purchasebtnX', 'none');
-        purchase_btn[i].style.setProperty('--purchasebtnY', 'none');
+plan.forEach((plan1) => {
+    plan1.addEventListener("mouseover", () => {
+        document.querySelector(".active")?.classList.remove("active");
+        plan1.classList.add("active");
     });
-
-    plan[i].addEventListener("mouseout", () => {
-        plan_content[i].style.setProperty('--plancontentX', '0');
-        plan_content[i].style.setProperty('--plancontentY', '0');
-        plan[i].style.setProperty('--planheight', '0px');
-        purchase_btn[i].style.setProperty('--purchasebtnX', '0');
-        purchase_btn[i].style.setProperty('--purchasebtnY', '0');
-    });
-}
+});
 
 arrow.addEventListener("mouseover", () => {
     arrow.style.setProperty('--arrowscaleX', 'none');

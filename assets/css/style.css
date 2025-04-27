@@ -453,7 +453,7 @@ a {
     --tw-scale-x: var(--scaleX, 0);
     --tw-scale-y: var(--scaleY, 0);
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-    --tw-translate-x: -50%;
+    --tw-translate-x: 0%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     transition-duration: .5s;
     transition-property: all;
@@ -835,10 +835,6 @@ a {
     border-radius: 6px;
 }
 
-.plan:hover .purchase-btn {
-    color: white !important;
-}
-
 .plan::before {
     content: "";
     position: absolute;
@@ -855,6 +851,15 @@ a {
     height: var(--planheight, 0px);
     top: 0;
     right: 0;
+}
+
+.active {
+    --planheight: 100%;
+    --plancontentX: none;
+    --plancontentY: none;
+    --purchasebtnX: none;
+    --purchasebtnY: none;
+    --purchasebtncolor: white;
 }
 
 .plan-content {
@@ -896,7 +901,7 @@ a {
 .purchase-btn {
     padding: 10px 32px;
     border-radius: 40px;
-    color: rgba(12, 110, 109, 1) !important;
+    color: var(--purchasebtncolor, rgba(12, 110, 109, 1));
     border-width: 1px;
     position: relative;
     cursor: pointer;
