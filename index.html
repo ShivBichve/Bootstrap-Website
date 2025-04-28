@@ -20,6 +20,8 @@
 
     <!----------------------- Swiper CSS --------------------------->
     <link rel="stylesheet" href="./swiper/swiper.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -321,7 +323,7 @@
 
     <!----------------------- Starting Of Third Section --------------------------->
         <section class="pt-100 pb-196 mt-4 mx-lg-4 mx-2 bg-3 position-relative">
-            <div class="container position-relative">
+            <div class="container position-relative" data-aos="fade-up-right">
                 <img src="./assets/images/arrow.png" alt="" class="img-fluid arrow-swing d-lg-block d-none">
                 <div class="row">
                     <div class="col-lg-8 col-12 m-auto">
@@ -428,7 +430,7 @@
     <!----------------------- Ending Of Third Section --------------------------->
 
     <!----------------------- Starting Of Fourth Section --------------------------->
-        <section class="pt-206 pb-150 mx-lg-4 mx-2 bg-2 position-relative">
+        <section class="pt-206 pb-150 mx-lg-4 mx-2 bg-2 position-relative" data-aos="fade-up-right">
             <div class="animation">
                 <img src="./assets/images/hero_shape (1).png" alt="" class="img-fluid">
             </div>
@@ -528,7 +530,7 @@
     <!----------------------- Ending Of Fourth Section --------------------------->
 
     <!----------------------- Content Slider --------------------------->
-        <div class="content-slider-section d-flex gap-5">
+        <div class="content-slider-section d-flex gap-5" data-aos="fade-up-right">
             <div class="content-slider">
                 <div class="content-slider-content position-relative">
                     <h1>Business</h1>
@@ -573,8 +575,8 @@
     <!----------------------- Content Slider --------------------------->
 
     <!----------------------- Starting Of Fifth Section --------------------------->
-        <section class="py-120 mt-4 mx-lg-4 mx-2 bg-green">
-            <div class="container">
+        <section class="py-120 mt-4 mx-lg-4 mx-2 bg-green" >
+            <div class="container" data-aos="fade-up-right">
                 <div class="row">
                     <div class="col-lg-7 col-12 m-auto mb-5">
                         <h1 class="text-heading-color fw-bolder text-center">Perform Market Research to gain
@@ -650,7 +652,7 @@
 
     <!----------------------- Starting Of Sixth Section --------------------------->
         <section class="mx-lg-4 mx-2 my-4 bg-4">
-            <div class="container">
+            <div class="container" data-aos="fade-up-right">
                 <div class="row">
                     <div class="col-lg-6 col-12">
                         <h1 class="text-white fw-bold">
@@ -695,7 +697,7 @@
 
     <!----------------------- Starting Of Seventh Section --------------------------->
         <section class="mx-lg-4 mx-2 pt-100 py-120 bg-green border-40 position-relative">
-            <div class="container">
+            <div class="container" data-aos="fade-up-right">
                 <div class="row">
                     <div class="col-lg-7 col-12 m-auto">
                         <h5 class="section-heading-text fw-medium text-center">OUR WORKING STEPS</h5>
@@ -788,7 +790,7 @@
 
     <!----------------------- Starting Of Eighth Section --------------------------->
         <section class="bg-section mx-lg-4 mx-2 pt-160 pb-120">
-            <div class="container">
+            <div class="container" data-aos="fade-up-right">
                 <div class="row">
                     <div class="col-lg-5 col-12">
                         <h5 class="section-heading-text">PRICING PLANS</h5>
@@ -1040,7 +1042,7 @@
 
     <!----------------------- Starting Of tenth Section --------------------------->
         <section class="pb-120">
-            <div class="container">
+            <div class="container" data-aos="fade-up-right">
                 <div class="row">
                     <div class="col-lg-7 col-12 m-auto">
                         <h5 class="section-heading-text fw-medium text-center">MEET OUR TEAM</h5>
@@ -1197,7 +1199,7 @@
 
     <!----------------------- Starting Of Eleventh Section --------------------------->
         <section class="mx-lg-4 mx-2 py-4 border-40 position-relative z-10 overflow-hidden bg-pri">
-            <div class="container">
+            <div class="container" data-aos="fade-up-right">
                 <div class="row">
                     <div class="col-lg-6 col-12">
                         <div class="position-relative">
@@ -1471,7 +1473,7 @@
 
     <!----------------------- Starting Of Footer --------------------------->
     <footer class="pt-120 bg-section overflow-hidden z-10 position-relative">
-        <div class="container">
+        <div class="container" data-aos="fade-up-right">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-12">
                     <a href="">
@@ -1985,6 +1987,8 @@
     <!----------------------- Swiper JavaScript --------------------------->
     <script src="./swiper/swiper.min.js"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
@@ -2047,6 +2051,8 @@
                 }
             },
         });
+
+        AOS.init();
     </script>
 </body>
 
